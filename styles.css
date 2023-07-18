@@ -1,0 +1,28 @@
+body {
+    display:flex;
+    background-color: darkslategrey;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:600px;
+    width: 400px;
+    color:white;
+    background-color: darkgray;
+}
+button {
+    width:80px;
+    height: 80px;
+}
+.displayWrapper {
+    background-color: white;
+    width:360px;
+    height: 80px;
+    color:black;
+    margin-bottom:20px;
+    text-align: right;
+}
