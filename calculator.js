@@ -95,6 +95,8 @@ function clear () {
     num1 = 0;
     num2 = 0;
     enterNum = "";
+    isNegative = false;
+    document.getElementById("display").innerText = 0;
 }
 
 function clearError () {
@@ -102,6 +104,7 @@ function clearError () {
 }
 
 
+document.getElementById('clear').addEventListener("click", ()=> clear());
 
 document.getElementById('num1').addEventListener("click", function(){
     enterNum+="1";
@@ -202,3 +205,9 @@ document.getElementById('posNeg').addEventListener("click", ()=> {
         isNegative = true;
     }
 });
+
+document.getElementById('decimal').addEventListener("click", function() {
+    if (enterNum.includes(".", 0) == false) {
+        enterNum += ".";
+    }
+})
