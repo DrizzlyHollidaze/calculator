@@ -83,6 +83,7 @@ function operate(num1, num2) {
     } else {
         result = num1;
     }
+    result = Number(result.toFixed(9));
     num1 = result;
     num2 = undefined;
     document.getElementById("display").innerText = result;
