@@ -93,7 +93,7 @@ function clear () {
     includesDecimal = false;
     answer = 0;
     num1 = 0;
-    num2 = 0;
+    num2 = undefined;
     enterNum = "";
     isNegative = false;
     document.getElementById("display").innerText = 0;
@@ -101,10 +101,13 @@ function clear () {
 
 function clearError () {
     enterNum = "";
+    document.getElementById("display").innerText = enterNum;
 }
 
 
 document.getElementById('clear').addEventListener("click", ()=> clear());
+
+document.getElementById('clearError').addEventListener("click", ()=> clearError());
 
 document.getElementById('num1').addEventListener("click", function(){
     enterNum+="1";
