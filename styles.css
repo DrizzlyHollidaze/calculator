@@ -17,12 +17,26 @@ body {
 button {
     width:80px;
     height: 80px;
+    border-radius: 5px;
+    margin: 5px;
+    color:white;
+    background-color: black;
+    font-size:36px;
 }
 .displayWrapper {
+    display:flex;
     background-color: white;
     width:360px;
     height: 80px;
     color:black;
     margin-bottom:20px;
-    text-align: right;
+    align-items: center;
+    justify-content: right;
 }
+.displayText {
+    display:flex;
+    text-align: right;
+    font-size: 32px;
+    
+}
+
